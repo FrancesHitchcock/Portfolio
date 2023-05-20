@@ -1,5 +1,3 @@
-/* font-family: 'Roboto Mono', monospace;
-font-family: 'Source Sans Pro', sans-serif; */
 
 *,
 *::after,
@@ -19,7 +17,6 @@ font-family: 'Source Sans Pro', sans-serif; */
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    /* --clr-accent: #CA5C69; */
     --clr-accent: #CF6A76;
 
     --fs-h1: 3.5rem;
@@ -68,13 +65,14 @@ main{
 }
 
 section{
-    padding: 5em 2em;
+    /* padding: 5em 2em; */
+    padding: 3em 2em;
 }
 
-footer{
-    padding: 2em 1em;
-    background-color: var(--clr-dark);
-    text-align: center;
+@media (min-width: 600px){
+    section{
+        padding: 5em 2em;
+    }
 }
 
 img{
@@ -88,7 +86,7 @@ img{
     outline-offset: 3px;
 }
 
-/* buttons */
+/* buttons & links*/
 
 .btn {
     display: inline-block;
@@ -109,9 +107,34 @@ img{
     transform: scale(1.1);
 }
 
+.nav-link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: var(--clr-accent);
+}
+
+a.project-tile-link{
+    text-decoration: none;
+    color: var(--clr-light)
+}
+
+.link-span a{
+    text-decoration: none;
+    color: var(--clr-accent);
+    transition: color .5s;
+}
+
+.link-span a:hover{
+    color: #A83644;
+    text-decoration: underline;
+}
 
 /* typography */
-/* don't forget to define properties for project component */
 
 h1,
 h2,
@@ -181,7 +204,6 @@ strong{
     background: var(--clr-light);
 }
 
-
 .intro-subtitle,
 .about-subtitle{
     background-color: var(--clr-accent);
@@ -233,17 +255,12 @@ strong{
 
 .footer-text{
     color: var(--clr-light);
-    font-weight: normal;
-    /* letter-spacing: .1em; */
+    font-weight: 400;
 }
 
 .project-page-skills{
-    font-weight: normal;
+    font-weight: 400;
 }
-
-/* .project-page-link-text{
-    font-weight: bold;
-} */
 
 /* Header */
 
@@ -291,17 +308,6 @@ header{
     padding: 0;
 }
 
-.nav-link {
-    color: inherit;
-    font-weight: bold;
-    font-size: var(--fs-h3);
-    text-decoration: none;
-}
-
-.nav-link:hover{
-    color: var(--clr-accent);
-}
-
 .nav-toggle {
     padding: 1em .5em;
     background: transparent;
@@ -342,7 +348,6 @@ header{
 .hamburger::before,
 .hamburger::after {
     background-color: var(--clr-dark);
-    /* background-color: var(--clr-accent); */
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -366,8 +371,6 @@ header{
 
 .hamburger::before { top: 8px; }
 .hamburger::after { bottom: 8px; }
-
-
 
 /* Introduction */
 
@@ -435,7 +438,7 @@ header{
 
 .skill{
     max-width: 500px;
-    margin: 0 auto;
+    margin: 3em auto;
     flex: 1;
     flex-basis: 0;
 }
@@ -447,6 +450,9 @@ header{
         margin-left: auto;
         margin-right: auto;
         gap: 2em;
+    }
+    .skill{
+        margin: 0 auto;
     }
 }
 
@@ -491,7 +497,6 @@ header{
         position: relative;
         z-index: 2;
     }
-
 }
 
 /* my projects */
@@ -504,7 +509,7 @@ header{
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     column-gap: 3em;
     row-gap: 1em;
     max-width: 1000px;
@@ -523,13 +528,8 @@ header{
 }
 
 .project-image:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .9;
-}
-
-a.project-tile-link{
-    text-decoration: none;
-    color: var(--clr-dark)
 }
 
 .project-tile{
@@ -549,7 +549,6 @@ a.project-tile-link{
     margin: 0 auto;
 }
 
-
 .section-title-contact{
     margin-bottom: 1em;
 }
@@ -566,21 +565,9 @@ a.project-tile-link{
 .link-span{
     display: block;
     font-size: var(--fs-body);
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
 }
-
-.link-span a{
-    text-decoration: none;
-    color: var(--clr-accent);
-    transition: color .5s;
-}
-
-.link-span a:hover{
-    color: #A83644;
-    text-decoration: underline;
-}
-
 
 .link-span + .link-span{
     margin-top: 1.5em;
@@ -602,14 +589,22 @@ a.project-tile-link{
     margin: 2.5em 0;
 }
 
+/* footer */
+
+footer{
+    padding: 2em 1em;
+    background-color: var(--clr-dark);
+    text-align: center;
+}
+
+/* project-page */
+
 .project-page-section{
     padding-top: 0;
     padding-bottom: 1em;
     max-width: 1000px;
     margin: 0 auto;
 }
-
-/* typography */
 
 .project-page-title{
     margin-top: 0;
@@ -645,7 +640,6 @@ a.project-tile-link{
 }
 
 .project-navigation-span{
-    /* padding: .5em; */
     height: 1em;
     width: 1em;
     line-height: 1;
