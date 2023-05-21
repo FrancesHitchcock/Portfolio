@@ -8,11 +8,11 @@ export default function WhatIDo(){
                 <div className="skills">
                     <div className="skill">
                         <h3>HTML + CSS</h3>
-                        <p>I make responsive, mobile-first websites using CSS tools such as grid and flexbox, and can enhance user experience with subtle animations. I can work from mockups including Figma plans and also enjoy creating web designs from scratch. </p>
+                        <p>I make responsive, mobile-first websites using CSS tools such as grid, flexbox and custom properties. I can enhance user experience with subtle animations. I can work from mockups including Figma plans and also enjoy creating web designs from scratch. I try to user descriptive class names in my work. </p>
                     </div>
                     <div className="skill">
                         <h3>JavaScript</h3>
-                        <p>My JavaScript focuses on code re-use and scalability. I use ES6 syntax where appropriate, including arrow functions, template literals, destructuring and modular JS. My work includes data from APIs. I love solving JavaScript logic problems.</p>
+                        <p>My JavaScript focuses on code re-use. I have created games using both classes and constructor functions. I use ES6 syntax where appropriate, including arrow functions, template literals, destructuring and modular JavaScript. My work includes data from APIs. I love solving JavaScript logic problems.</p>
                     </div>
                     <div className="skill">
                         <h3>React</h3>
