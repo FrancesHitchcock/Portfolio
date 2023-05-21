@@ -16,7 +16,7 @@ export default function WhatIDo(){
                     </div>
                     <div className="skill">
                         <h3>React</h3>
-                        <p>My React projects are built using functional components, though I can also work with class components. I use props and state and other React hooks including custom hooks, and my work uses elements of React Router 6. I also have experience of React Context.This portfolio was built in React.</p>
+                        <p>My React projects are built using functional components, though I can also work with class components. I use props and state and other React hooks including custom hooks, and my work uses elements of React Router 6. I also have experience of React Context. This portfolio was built in React.</p>
                     </div>
                 </div>
                 <a className="btn" href="#projects">Projects</a>
