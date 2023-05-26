@@ -208,7 +208,7 @@ strong{
 .about-subtitle{
     background-color: var(--clr-accent);
     font-family: var(--ff-secondary);
-    padding: .25em 1em;
+    padding: .25em .5em;
     margin-bottom: 1em;
 }
 
