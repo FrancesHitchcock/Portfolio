@@ -208,7 +208,7 @@ strong{
 .about-subtitle{
     background-color: var(--clr-accent);
     font-family: var(--ff-secondary);
-    padding: .25em .5em;
+    padding: .25em 1em;
     margin-bottom: 1em;
 }
 
@@ -573,13 +573,13 @@ header{
     margin-top: 1.5em;
 }
 
-.fa-github{
+.fa-brands{
     font-size: var(--fs-h4);
     padding: .25em;
     transition: transform .5s;
 }
 
-.fa-github:hover{
+.fa-brands:hover{
     transform: scale(1.2);
 }
 

@@ -5,7 +5,7 @@ export default function Introduction(){
             <h1 className="section-title section-title-intro">
                 Hi, I'm <strong>Frances</strong>
             </h1>
-            <p className="section-subtitle intro-subtitle">front-end developer</p>
+            <p className="section-subtitle intro-subtitle">frontend developer</p>
             <img className="intro-image" src="/images/frances-main.jpg" alt="Frances in the foreground holding camera and smiling. She is wearing a brown knitted headband and a huge fawn and black scarf. The backdrop is of mature winter trees and a stone building." />
         </section>
     )
