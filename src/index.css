@@ -123,11 +123,23 @@ a.project-tile-link{
     color: var(--clr-light)
 }
 
+p a{
+    text-decoration: none;
+    color: darkblue;
+    transition: color .5s; 
+}
+
+p a:hover{
+    color: midnightblue;
+    text-decoration: underline;
+}
+
 .link-span a{
     text-decoration: none;
     color: var(--clr-accent);
     transition: color .5s;
 }
+
 
 .link-span a:hover{
     color: #A83644;
